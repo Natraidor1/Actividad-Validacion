@@ -1,6 +1,7 @@
 package francisco.nataren.myapplication
 
 import android.os.Bundle
+import android.widget.EditText
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -16,5 +17,10 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+
+        val txtNombre = findViewById<EditText>(R.id.txtNombre)
+        val txtCorreo = findViewById<EditText>(R.id.txtCorreo)
+        val txtContraseña = findViewById<EditText>(R.id.txtContraseña)
     }
 }
